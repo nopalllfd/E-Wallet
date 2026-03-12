@@ -232,3 +232,7 @@ body {
     color: var(--bg-primary);
     text-decoration: none;
 }
+
+button {
+    cursor: pointer;
+}
