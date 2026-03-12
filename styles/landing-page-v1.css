@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --bg-primary: rgba(41, 72, 255, 1);
+    --bg-white: #fff;
+    --fc-secondary: #4F5665;
+    --border-grey: #c2c2c241;
+    --input-grey: #e6e6e625;
+    --input-radius: 8px;
+    --f-primary:"Montserrat", sans-serif;
+    --f-secondary: "Nunito Sans", sans-serif;
+    --radial-gradient-primary: radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 70%, rgba(123, 155, 255, 0) 100%);
+}
+
+header {
+    background-color: var(--bg-primary);
+    padding: 1rem 4rem 0;
+    height: 3.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+header .icon {
+    position: absolute;
+    left: 4rem;
+}
+header .button {
+    position: absolute;
+    right: 4rem;
+}
+
+header .icon img {
+    width: 2rem;
+}
+
+header .icon span{
+   position: relative;
+   bottom: .3rem;
+   font-size: 1.4rem;
+   transform: translateY(-40%);
+   margin-left: 15px;
+   color: var(--bg-white);
+   font-family: var(--f-secondary);
+}
+
+
+
+header .button button {
+    font-size: .8rem;
+    height: 2.5rem;
+    width: 5.3rem;
+    margin-inline: .5rem;
+}
+header .button button:first-child {
+    background-color: transparent;
+    outline: var(--bg-white);
+    border: 1px solid var(--bg-white);
+    border-radius: 5px;
+
+    color: var(--bg-white);
+}
+header .button button:nth-child(2) {
+    background-color: var(--bg-white);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: var(--bg-primary);
+}
+
+main {
+    font-family: var(--f-primary);
+}
+
+main .home {
+    height: 110vh;
+    background-color: var(--bg-white);
+    position: relative;
+}
+
+main .home .title {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding:  8rem 6rem 0px 6rem;
+}
+
+
+main .home .title h1 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 3rem;
+}
+main .home .title .secondary-title{
+    margin-top: 1.8rem;
+    color: var(--fc-secondary);
+}
+main .home .title p {
+    width: 70%;
+}
+
+main .home .button {
+    margin: 2rem 0;
+}
+
+
+main .home .button .btn-home{
+    padding: 1rem 3rem;
+    border-radius: .4rem;
+    border: none;
+    background-color: var(--bg-primary);
+    color: var(--bg-white);
+}
+
+main .home .available {
+    position: relative;
+}
+main .home .available .text {
+    font-size: 1rem;
+    color: var(--fc-secondary);
+}
+
+main .home .available .icon{
+    position: absolute;
+    left: .5rem;
+    top: 2.8rem;
+}
+main .home .available .icon img {
+    width: 1.7rem;
+    margin-right: 2.7rem;
+}
+
+
+main .home .icon {
+    display: inline-block;
+    width: 50%;
+    right: 0;
+    top: 6rem;
+    position: absolute;
+}
+
+main .home .icon img {
+    width: 100%;
+}
+
+main .brands {
+    background-color: rgba(232, 232, 232, 0.3);
+    height: 20vh;
+    position: relative;
+    padding: 2rem 2rem 0;
+}
+
+main .brands .brand {
+    display: inline-block;
+    margin-inline: 2rem;
+    width: 8rem;
+}
+
+main .brands .microsoft {
+    position: relative;
+    left: 2rem;
+}
+main .brands .dropbox {
+    position: relative;
+    top: .35rem;
+    left: 2rem;
+}
+main .brands .hnm {
+    position: relative;
+    left: 2rem;
+}
+main .brands .airbnb {
+    position: relative;
+    left: 2rem;
+    bottom: .4rem;
+}
+
+main .brands .canon {
+    position: relative;
+    left: 2rem;
+    bottom: .8rem;
+}
+main .brands .dell {
+    position: relative;
+    left: 2rem;
+    top: .7rem
+}
+
+main .about {
+    height: 70vh;
+    background-color: var(--bg-white);
+    position: relative;
+    overflow: hidden;
+}
+
+main .about .text {
+    width: 50%;
+    padding: 8rem 1rem 0 4rem;
+    font-family: var(--f-primary);
+}
+
+main .about .text .title h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+main .about .text .secondary-text {
+    margin-top: 1.5rem;
+    width: 80%;
+    font-size: 1rem;
+    color: var(--fc-secondary);
+}
+
+
+
+main .about .card {
+    position: absolute;
+    left: 50%;
+}
+
+main .about .card .card-support {
+    width: 13rem;
+    position: relative;
+    bottom: 10rem;
+    right: 5rem;
+    height: 16rem;
+    background-color: var(--bg-primary);
+    color: var(--bg-white);
+    border-radius: 1rem;
+}
+main .about .card .card-privacy {
+    width: 13rem;
+    bottom: 10rem;
+    position: absolute;
+    left: 9rem;
+    height: 16rem;
+    background-color: var(--bg-primary);
+    color: var(--bg-white);
+    border-radius: 1rem;
+}
+
+main .about .card .card-download {
+    width: 13rem;
+    bottom: 10rem;
+    position: absolute;
+    left: 23rem;
+    height: 16rem;
+    background-color: var(--bg-primary);
+    color: var(--bg-white);
+    border-radius: 1rem;
+}
+
+
+main .about .card .card-support .title   {
+    position: relative;
+    top: 18%;
+    left: 55%;
+    transform: translateX(-30%);
+}
+
+main .about .card .card-privacy .title   {
+    position: relative;
+    top: 18%;
+    left: 55%;
+    transform: translateX(-30%);
+}
+
+main .about .card .card-download .title   {
+    position: relative;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-30%);
+}
+
+
+main .about .card .card-support .icon {
+    background-color: var(--bg-white);
+    width: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    position: relative;
+    height: 19%;
+    text-align: center;
+    border-radius: 10rem;
+}
+
+main .about .card .card-download .icon {
+    background-color: var(--bg-white);
+    width: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    position: relative;
+    height: 19%;
+    text-align: center;
+    border-radius: 10rem;
+}
+
+main .about .card .card-privacy .icon {
+    background-color: var(--bg-white);
+    width: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    position: relative;
+    height: 19%;
+    text-align: center;
+    border-radius: 10rem;
+}
+
+main .about .card .card-download .icon {
+    background-color: var(--bg-white);
+    width: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    position: relative;
+    height: 19%;
+    text-align: center;
+    border-radius: 10rem;
+}
+
+main .about .card .card-support .icon img {
+    position: relative;
+    top: 12%;
+}
+
+main .about .card .card-download .icon img {
+    position: relative;
+    top: 12%;
+}
+
+main .about .card .card-privacy .icon img {
+    position: relative;
+    top: 12%;
+}
+main .about .card .card-support .text {
+    position: relative;
+    right: 25%;
+    bottom: 4rem;
+    font-size: 1rem;
+    height: 80%;
+    width: 90%;
+    text-align: center;
+    font-weight: 200;
+} 
+
+main .about .card .card-privacy .text {
+    position: relative;
+    right: 25%;
+    bottom: 4rem;
+    font-size: 1rem;
+    height: 80%;
+    width: 90%;
+    text-align: center;
+    font-weight: 200;
+} 
+
+main .about .card .card-download .text {
+    position: relative;
+    right: 25%;
+    bottom: 4rem;
+    font-size: 1rem;
+    height: 80%;
+    width: 90%;
+    text-align: center;
+    font-weight: 200;
+} 
+
+.wave-section {
+    position: relative;
+    z-index: 1;
+
+}
+
+.wave-section .background {
+    position: absolute;
+    z-index: -1;
+
+}
+
+.wave-section .background .top{
+    position: relative;
+    bottom: -10px;
+}
+
+.wave-section .mobile {
+    position: absolute;
+    /* z-index: 2; */
+    left: 12rem;
+    top: 3rem;
+}
+
+.wave-section .mobile img {
+    width: 17.4rem;
+}
+
+.wave-section .text {
+    position: absolute;
+    left: 45%;
+    bottom: -30rem;
+    color: var(--bg-white);
+}
+
+.wave-section .text h1 {
+    font-weight: 400;
+    padding: 1.2rem 0;
+}
+
+.wave-section .text .secondary-title {
+    font-weight: 200;
+    padding: 1.2rem 0;
+}
+
