@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: rgba(41, 72, 255, 1);
+  --bg-white: #fff;
+  --fc-secondary: #4f5665;
+  --border-grey: #c2c2c241;
+  --input-grey: #e6e6e625;
+  --input-radius: 8px;
+  --f-primary: 'Montserrat', sans-serif;
+  --f-secondary: 'Nunito Sans', sans-serif;
+  --radial-gradient-primary: radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 70%, rgba(123, 155, 255, 0) 100%);
+}
+
+button {
+  cursor: pointer;
+}
+
+hr {
+  color: var(--fc-secondary);
+  opacity: 20%;
+}
+
+header {
+  background-color: var(--bg-white);
+  padding: 1rem 4rem;
+  height: auto;
+  min-height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img {
+      width: 1.8rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+      color: var(--bg-primary);
+      font-family: var(--f-secondary);
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    font-family: var(--f-primary);
+    color: var(--fc-secondary);
+
+    .photo {
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+
+  aside {
+    padding: 1rem 2rem 4rem 3rem;
+    width: 20%;
+    border-right: 1px solid var(--border-grey);
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      button {
+        height: 2.4rem;
+        display: flex;
+        align-items: center;
+        border-radius: 0.4rem;
+        background: transparent;
+        outline: none;
+        border: none;
+        gap: 0.5rem;
+        color: var(--fc-secondary);
+        padding-inline: 1rem;
+
+        &:nth-child(2) {
+          color: var(--bg-white);
+          background-color: var(--bg-primary);
+        }
+
+        &:last-child {
+          color: rgba(208, 0, 0, 1);
+        }
+      }
+    }
+  }
+
+  main {
+    font-family: var(--f-primary);
+    width: 100%;
+
+    .container {
+      padding: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .section {
+        .icon {
+          display: flex;
+          justify-content: flex-start;
+          gap: 1rem;
+          align-items: center;
+        }
+      }
+
+      .table {
+        display: flex;
+        gap: 2rem;
+
+        .left-table {
+          border: 1px solid var(--border-grey);
+          padding: 1rem;
+          display: flex;
+          border-radius: 0.2rem;
+          flex-direction: column;
+          gap: 1.5rem;
+          flex: 2;
+
+          .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+              font-weight: 600;
+            }
+          }
+
+          .account-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: rgba(232, 232, 232, 0.3);
+            padding: 0.8rem 1rem;
+            border-radius: 0.4rem;
+
+            .profile-img {
+              width: 3.5rem;
+              height: 3.5rem;
+              border-radius: 0.4rem;
+              object-fit: cover;
+            }
+
+            .bio {
+              display: flex;
+              flex-direction: column;
+              gap: 0.3rem;
+
+              .name {
+                font-weight: 700;
+                font-size: 0.95rem;
+              }
+
+              .phone {
+                font-size: 0.85rem;
+                color: var(--fc-secondary);
+              }
+
+              .verified {
+                display: flex;
+                align-items: center;
+                gap: 0.3rem;
+                font-size: 0.75rem;
+                color: var(--bg-white);
+                background-color: var(--bg-primary);
+                padding: 0.2rem 0.6rem;
+                border-radius: 0.3rem;
+
+                img {
+                  width: 0.9rem;
+                }
+              }
+            }
+          }
+
+          .amount-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .label {
+              font-weight: 700;
+              font-size: 0.95rem;
+            }
+
+            .sublabel {
+              font-size: 0.8rem;
+              color: var(--fc-secondary);
+            }
+
+            .input-wrap {
+              display: flex;
+              align-items: center;
+              gap: 0.7rem;
+              border: 1.4px solid var(--border-grey);
+              border-radius: 0.4rem;
+              padding: 0.55rem 1rem;
+
+              img {
+                width: 1rem;
+              }
+
+              input {
+                border: none;
+                outline: none;
+                font-family: var(--f-primary);
+                font-size: 0.85rem;
+                color: var(--fc-secondary);
+                width: 100%;
+                background: transparent;
+              }
+            }
+          }
+
+          .payment-method-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+
+            .label {
+              font-weight: 700;
+              font-size: 0.95rem;
+            }
+
+            .sublabel {
+              font-size: 0.8rem;
+              color: var(--fc-secondary);
+            }
+
+            .methods {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+
+              .method-item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 0.7rem 1rem;
+                border-radius: 0.4rem;
+                background-color: rgba(232, 232, 232, 0.3);
+                cursor: pointer;
+
+                input[type='radio'] {
+                  accent-color: var(--bg-primary);
+                  width: 1rem;
+                  height: 1rem;
+                  cursor: pointer;
+                }
+
+                .method-logo {
+                  width: 2.5rem;
+                  height: 1.5rem;
+                  object-fit: contain;
+                }
+
+                .method-name {
+                  font-size: 0.9rem;
+                  color: var(--fc-secondary);
+                }
+              }
+            }
+          }
+        }
+
+        .right-table {
+          border: 1px solid var(--border-grey);
+          padding: 1rem;
+          display: flex;
+          border-radius: 0.2rem;
+          flex: 1;
+          flex-direction: column;
+          gap: 1.5rem;
+          height: fit-content;
+
+          .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+              font-weight: 600;
+            }
+          }
+
+          .payment-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            hr {
+              border: none;
+              border-top: 1px solid var(--border-grey);
+              opacity: 100%;
+            }
+
+            .detail-row {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 0.9rem;
+              color: var(--fc-secondary);
+
+              .detail-value {
+                font-weight: 600;
+                color: #1a1a1a;
+              }
+
+              &.subtotal {
+                font-weight: 700;
+
+                .detail-value {
+                  color: var(--bg-primary);
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+
+          .submit-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--bg-primary);
+            color: var(--bg-white);
+            border: none;
+            border-radius: 0.4rem;
+            font-family: var(--f-primary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+          }
+
+          .discount-note {
+            font-size: 0.75rem;
+            color: var(--fc-secondary);
+          }
+        }
+      }
+    }
+  }
+}

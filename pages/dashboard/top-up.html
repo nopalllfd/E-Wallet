@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Up Account</title>
+    <link rel="stylesheet" href="../../styles/dashboard/top-up.css">
+</head>
+
+<body>
+    <header>
+        <nav class="icon">
+            <img src="../../assets/icons/ewallet/e-wallet.png">
+            <span>E-Wallet</span>
+        </nav>
+        <nav class="profile">
+            <p>Ghaluh Wizard</p>
+            <div class="photo">
+                <img src="../../assets/icons/dashboard/dashboard-v1/profile.png" alt="">
+            </div>
+            <section class="drop-button">
+                <img src="../../assets/icons/dashboard/dashboard-v1/down.svg" alt="">
+            </section>
+        </nav>
+    </header>
+    <hr>
+    <section class="container">
+        <aside class="navside">
+            <nav>
+                <button>
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/transaction/dashboard.svg"
+                            alt=""></section>
+                    <section class="text">Dashboard</section>
+                </button>
+                <button>
+                    <section class="icon"><img src="../../assets/icons/dashboard/transfer/send.svg" alt="">
+                    </section>
+                    <section class="text">Transfer</section>
+                </button>
+                <button>
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/history.svg" alt="">
+                    </section>
+                    <section class="text">History</section>
+                </button>
+                <button>
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/upload.svg" alt="">
+                    </section>
+                    <section class="text">Top up</section>
+                </button>
+                <button>
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/users.svg" alt="">
+                    </section>
+                    <section class="text">Profile</section>
+                </button>
+                <button>
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/exit.svg" alt="">
+                    </section>
+                    <section class="text">Exit</section>
+                </button>
+            </nav>
+        </aside>
+        <main>
+            <section class="container">
+                <section class="section">
+                    <section class="icon">
+                        <img src="../../assets/icons/dashboard/dashboard-v1/transaction/repeat.svg" alt="">
+                        <strong>Top Up Account</strong>
+                    </section>
+                </section>
+                <div class="table">
+                    <section class="left-table">
+                        <section class="header">
+                            <section class="title">Account Information</section>
+                        </section>
+
+                        <section class="account-card">
+                            <img class="profile-img"
+                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/ghaluh.png"
+                                alt="">
+                            <section class="bio">
+                                <p class="name">Ghaluh Wizard</p>
+                                <p class="phone">(239) 555-0108</p>
+                                <p class="verified">
+                                    <img src="../../assets/icons/dashboard/transfer/checklist.svg" alt="">
+                                    Verified
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="amount-section">
+                            <p class="label">Amount</p>
+                            <p class="sublabel">Type the amount you want to transfer to your e-wallet account</p>
+                            <section class="input-wrap">
+                                <img src="../../assets/icons/dashboard/transfer/money.svg" alt="">
+                                <input type="text" placeholder="Enter Nominal Transfer">
+                            </section>
+                        </section>
+
+                        <section class="payment-method-section">
+                            <p class="label">Payment Method</p>
+                            <p class="sublabel">Choose your payment method for top up account</p>
+                            <section class="methods">
+                                <label class="method-item">
+                                    <input type="radio" name="payment" value="bri" checked>
+                                    <img class="method-logo" src="../../assets/icons/dashboard/bank/bri.svg" alt="">
+                                    <span class="method-name">Bank Rakyat Indonesia</span>
+                                </label>
+                                <label class="method-item">
+                                    <input type="radio" name="payment" value="dana">
+                                    <img class="method-logo" src="../../assets/icons/dashboard/bank/dana.svg">
+                                    <span class="method-name">Dana</span>
+                                </label>
+                                <label class="method-item">
+                                    <input type="radio" name="payment" value="bca">
+                                    <img class="method-logo" src="../../assets/icons/dashboard/bank/bca.svg">
+                                    <span class="method-name">Bank Central Asia</span>
+                                </label>
+                                <label class="method-item">
+                                    <input type="radio" name="payment" value="gopay">
+                                    <img class="method-logo" src="../../assets/icons/dashboard/bank/gopay.svg">
+                                    <span class="method-name">Gopay</span>
+                                </label>
+                                <label class="method-item">
+                                    <input type="radio" name="payment" value="ovo">
+                                    <img class="method-logo" src="../../assets/icons/dashboard/bank/ovo.svg">
+                                    <span class="method-name">OVO</span>
+                                </label>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section class="right-table">
+                        <section class="header">
+                            <section class="title">Payment</section>
+                        </section>
+                        <section class="payment-details">
+                            <section class="detail-row">
+                                <p>Order</p>
+                                <p class="detail-value">Idr. 40.000</p>
+                            </section>
+                            <section class="detail-row">
+                                <p>Delivery</p>
+                                <p class="detail-value">Idr. 0</p>
+                            </section>
+                            <section class="detail-row">
+                                <p>Tax</p>
+                                <p class="detail-value">Idr. 4000</p>
+                            </section>
+                            <hr>
+                            <section class="detail-row subtotal">
+                                <p>Sub Total</p>
+                                <p class="detail-value">Idr. 44.000</p>
+                            </section>
+                        </section>
+                        <button class="submit-btn">Submit</button>
+                        <p class="discount-note">*Get Discount if you pay with Bank Central Asia</p>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </section>
+</body>
+
+</html>
