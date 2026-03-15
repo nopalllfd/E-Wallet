@@ -1,134 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
 :root {
-    --bg-primary: rgba(41, 72, 255, 1);
-    --bg-white: #fff;
-    --fc-secondary: #4F5665;
-    --border-grey: #c2c2c241;
-    --input-grey: #e6e6e625;
-    --input-radius: 8px;
-    --f-primary:"Montserrat", sans-serif;
-    --radial-gradient-primary: radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 70%, rgba(123, 155, 255, 0) 100%)
+  --bg-primary: rgba(41, 72, 255, 1);
+  --bg-white: #fff;
+  --fc-secondary: #4f5665;
+  --border-grey: #c2c2c241;
+  --input-grey: #e6e6e625;
+  --input-radius: 8px;
+  --f-primary: 'Montserrat', sans-serif;
+  --radial-gradient-primary: radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 70%, rgba(123, 155, 255, 0) 100%);
 }
 
 body {
-    background-color: var(--bg-primary);
-    position: relative;
-    height: 120vh;
+  background-color: var(--bg-primary);
+  position: relative;
+  height: 120vh;
 }
 
 .form {
-    background-color: var(--bg-white);
-    height: 120vh;
-    width: 50%;
-    border-radius: 0 16px 16px 0;
-    display: inline-block;
-}
-.icon-tab {
-    position: absolute;
-    bottom: 0%;
-    left: 55%;
-    background: var(--radial-gradient-primary);
+  background-color: var(--bg-white);
+  height: 120vh;
+  width: 50%;
+  border-radius: 0 16px 16px 0;
+  display: flex;
+  flex-direction: column;
 
-}   
-.icon-tab img{
-    width: 80%;
-}   
-
-.form .container {
+  .container {
     padding: 30% 11% 0 11%;
+    display: flex;
+    flex-direction: column;
+
+    .icon {
+      color: var(--bg-primary);
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 15px;
+        font-family: var(--f-primary);
+      }
+    }
+
+    .primary-text {
+      margin-top: 15px;
+      font-family: var(--f-primary);
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .secondary-text {
+      margin-top: 14px;
+      line-height: 140%;
+      font-family: var(--f-primary);
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--fc-secondary);
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+
+      section {
+        position: relative;
+        width: 100%;
+      }
+
+      .pin {
+        margin: 10% 0;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .pin-input {
+        width: 12%;
+        margin: 0 0.5rem;
+        text-align: center;
+        outline: none;
+        border: none;
+        font-size: 2rem;
+        border-bottom: 0.1rem solid var(--border-grey);
+        padding-block: 1rem;
+
+        &:first-child {
+          border-bottom: 0.1rem solid var(--bg-primary);
+        }
+      }
+    }
+
+    .submit-button {
+      .btn {
+        width: 100%;
+        background-color: var(--bg-primary);
+        color: var(--bg-white);
+        font-family: var(--f-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+      }
+    }
+
+    .reset-pin {
+      margin-top: 1rem;
+      width: 100%;
+      font-family: var(--f-primary);
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+
+      p {
+        color: var(--fc-secondary);
+        font-weight: 200;
+      }
+
+      a {
+        color: var(--bg-primary);
+        text-decoration: none;
+      }
+    }
+  }
 }
 
-.form .container .icon {
-    color: var(--bg-primary);
-    text-align: start;
-    vertical-align: middle;
-    position: relative;
-}
-.form .container .icon span{
-   position: absolute;
-   top: 50%;
-   transform: translateY(-40%);
-   margin-left: 15px;
-   font-family: var(--f-primary);
-}
+.icon-tab {
+  position: absolute;
+  bottom: 0%;
+  left: 55%;
+  background: var(--radial-gradient-primary);
 
-.form .container .primary-text{
-    margin-top: 15px;
-    font-family: var(--f-primary);
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.form .container .secondary-text {
-    margin-top: 14px;
-    line-height: 140%;
-    font-family: var(--f-primary);
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--secondary-font-color);
-}
-
-.input-group section {
-    position: relative;
-    width: 100%;
-}
-
-.input-group .pin-input {
-    width: 12%;
-    margin: 0 .5rem;
-    text-align: center;
-    outline: none;
-    border: none;
-    font-size: 2rem;
-    border-bottom: .1rem solid var(--border-grey);
-    padding-block: 1rem ;
-}
-
-.input-group .pin-input:first-child{
-    border-bottom: .1rem solid var(--bg-primary);
-}
-
-.input-group .pin {
-    margin: 10% 0;
-}
-
-.submit-button .btn {
-    width: 100%;
-    background-color: var(--bg-primary);
-    color: var(--bg-white);
-    font-family: var(--f-primary);
-    display: inline-block;
-    height: 50px;
-    text-align: center;
-    border: none;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
-.reset-pin {
-    margin-top: 1rem;
-    width: 100%;
-    text-align: center;
-    font-family: var(--f-primary);
-}
-
-
-.reset-pin p {
-    color: var(--fc-secondary);
-    font-weight: 200;
-}
-.reset-pin a {
-    color: var(--bg-primary);
-    text-decoration: none;
+  img {
+    width: 80%;
+  }
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }

@@ -1,239 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
 :root {
-    --bg-primary: rgba(41, 72, 255, 1);
-    --bg-white: #fff;
-    --fc-secondary: #4F5665;
-    --border-grey: #c2c2c241;
-    --input-grey: #e6e6e625;
-    --input-radius: 8px;
-    --f-primary:"Montserrat", sans-serif;
-    --radial-gradient-primary: radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 70%, rgba(123, 155, 255, 0) 100%)
+  --bg-primary: rgba(41, 72, 255, 1);
+  --bg-white: #fff;
+  --fc-secondary: #4f5665;
+  --border-grey: #c2c2c241;
+  --input-grey: #e6e6e625;
+  --input-radius: 8px;
+  --f-primary: 'Montserrat', sans-serif;
+  --radial-gradient-primary: radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 70%, rgba(123, 155, 255, 0) 100%);
 }
 
 body {
-    background-color: var(--bg-primary);
-    position: relative;
+  background-color: var(--bg-primary);
+  height: 120vh;
+  font-family: var(--f-primary);
 }
 
-.form {
+main {
+  display: flex;
+  height: 110%;
+  flex-direction: row;
+  .form {
     background-color: var(--bg-white);
-    height: 150vh;
-    width: 50%;
-    border-radius: 0 16px 16px 0;
-    display: inline-block;
-}
-.icon-tab {
+    border-radius: 0 1rem 1rem 0;
+    height: 100%;
+    padding: 4rem;
+    flex-basis: 40%;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .icon {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          width: 2rem;
+        }
+        span {
+          font-family: var(--f-primary);
+          color: var(--bg-primary);
+          font-size: 1.2rem;
+        }
+      }
+      .primary-text {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+      .secondary-text {
+        color: var(--fc-secondary);
+      }
+      .google-sign {
+        button {
+          width: 100%;
+          border-radius: 2rem;
+          padding: 0.7rem 0;
+          background-color: #fff;
+          border: 1.5px solid var(--border-grey);
+          font-family: var(--f-primary);
+          font-weight: 400;
+          font-size: 1rem;
+          color: var(--fc-secondary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+        }
+        img {
+          width: 1.8rem;
+        }
+      }
+      .facebook-sign {
+        button {
+          width: 100%;
+          border-radius: 2rem;
+          padding: 0.7rem 0;
+          background-color: #fff;
+          border: 1.5px solid var(--border-grey);
+          font-family: var(--f-primary);
+          font-weight: 400;
+          font-size: 1rem;
+          color: var(--fc-secondary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+        }
+        img {
+          width: 1.8rem;
+        }
+      }
+      .break-line {
+        justify-content: space-between;
+        display: flex;
+        .first-line {
+          background-color: rgba(0, 0, 0, 0.098);
+          height: 1px;
+          width: 30%;
+        }
+        &:nth-child(2n) {
+          align-items: center;
+          color: var(--fc-secondary);
+        }
+        .second-line {
+          background-color: rgba(0, 0, 0, 0.098);
+          height: 1px;
+          width: 30%;
+        }
+      }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+
+        section {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          .label {
+            p {
+              margin: 0 0 8px 0;
+              font-weight: 600;
+              color: var(--fc-secondary);
+              font-size: 14px;
+            }
+          }
+
+          .input {
+            width: 100%;
+            padding: 12px 45px;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+          }
+
+          .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 38px;
+            width: 18px;
+            filter: opacity(0.5);
+            pointer-events: none;
+          }
+
+          .eyelash {
+            position: absolute;
+            right: 15px;
+            top: 38px;
+            width: 18px;
+            filter: opacity(0.5);
+            cursor: pointer;
+            transition: opacity 0.2s;
+          }
+        }
+
+        .register-button {
+          .btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+          }
+        }
+
+        .opsional-login {
+          text-align: center;
+          margin-top: 5px;
+
+          p {
+            font-size: 14px;
+            color: #64748b;
+
+            a {
+              color: #2563eb;
+              text-decoration: none;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+  .icon-tab {
     position: absolute;
-    bottom: 20%;
+    top: 20%;
     left: 50%;
     background: var(--radial-gradient-primary);
-
-}   
-.icon-tab img{
+  }
+  .icon-tab img {
     width: 100%;
-}   
-
-.form .container {
-    padding: 8% 11%;
-}
-
-.form .container .icon {
-    color: var(--bg-primary);
-    text-align: start;
-    vertical-align: middle;
-    position: relative;
-}
-.form .container .icon span{
-   position: absolute;
-   top: 50%;
-   transform: translateY(-40%);
-   margin-left: 15px;
-   font-family: var(--f-primary);
-}
-
-.form .container .primary-text{
-    margin-top: 15px;
-    font-family: var(--f-primary);
-    font-size: 30px;
-    font-weight: 450;
-}
-
-.form .container .secondary-text {
-    margin-top: 14px;
-    line-height: 140%;
-    font-family: var(--f-primary);
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--secondary-font-color);
-}
-.form .container .google-sign {
-    margin-top: 20px;
-    position: relative;
-}
-
-.form .container .google-sign button {
-    width: 100%;
-    border: none;
-    border-radius: 20px;
-    padding: 20px 0;
-    background-color: #fff;
-    border: 1.5px solid var(--border-grey);
-    font-family: var(--f-primary);
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--fc-secondary);
-}
-
-.form .container .google-sign img {
-   position: absolute;
-   width: 24px;
-   top: 50%;
-   left: 31%;
-   transform: translateY(-50%);
-}
-.form .container .google-sign span {
-   position: absolute;
-   top: 50%;
-   left: 41%;
-   transform: translateY(-50%);
-}
-
-.form .container .facebook-sign {
-    margin-top: 20px;
-    position: relative;
-}
-
-
-.form .container .facebook-sign button {
-    width: 100%;
-    border: none;
-    border-radius: 20px;
-    padding: 20px 0;
-    background-color: #fff;
-    border: 1.5px solid var(--border-grey);
-    font-family: var(--f-primary);
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--fc-secondary);
-}
-
-.form .container .facebook-sign img {
-   position: absolute;
-   width: 22px;
-   top: 50%;
-   left: 29%;
-   transform: translateY(-50%);
-}
-.form .container .facebook-sign span {
-   position: absolute;
-   top: 50%;
-   left: 39%;
-   transform: translateY(-50%);
-}
-
-.form .container .break-line {
-    position: relative;
-    padding: 5%;
-}
-.form .container .break-line .hr-lines {
-    position: absolute;
-    left:48%;
-    font-size: 12px;
-    font-family: var(--f-primary);
-    color: var(--fc-secondary);
-}
-.form .container .break-line .first-line {
-    position: absolute;
-    left: 1%;
-    top: 65%;
-    width: 40%;
-    border-radius: .10rem;
-    height: .10rem;
-    background-color: var(--border-grey);
-}
-.form .container .break-line .second-line {
-    position: absolute;
-    right: 1%;
-    top: 65%;
-    width: 40%;
-    border-radius: .10rem;
-    height: .10rem;
-    background-color: var(--border-grey);
-}
-
-.input-group section {
-    position: relative;
-    width: 100%;
-}
-.input-group label {
-    font-family: var(--f-primary);
-    font-size: 1rem;
-}
-
-.input-group .input {
-    width: 90%;
-    display: block;
-    height: 2.5rem;
-    margin: 10px 0 15px 0;
-    padding-left: 10%;
-    border-radius: var(--input-radius);
-    border: none;
-    background-color: var(--input-grey);
-    border: 0.11rem solid var(--border-grey)
-}
-
-
-.input-group .input-icon, .input-group .eyelash {
-    position: absolute;
-    width: 16px;
-    bottom: 35%;
-    transform: translateY(76%);
-}
-.input-group .input-icon {
-    left: 4%;
-}
-.input-group .eyelash {
-    right: 4%;
-}
-
-
-.register-button .btn {
-    width: 100%;
-    background-color: var(--bg-primary);
-    color: var(--bg-white);
-    font-family: var(--f-primary);
-    display: inline-block;
-    height: 50px;
-    text-align: center;
-    border: none;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
-.opsional-login {
-    margin-top: 1rem;
-    width: 100%;
-    text-align: center;
-    font-family: var(--f-primary);
-}
-
-
-.opsional-login p {
-    color: var(--fc-secondary);
-    font-weight: 200;
-}
-.opsional-login a {
-    color: var(--bg-primary);
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
+  }
 }
