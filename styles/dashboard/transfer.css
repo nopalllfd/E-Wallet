@@ -140,7 +140,8 @@ header {
       flex-direction: column;
       gap: 1rem;
 
-      button {
+      button,
+      a {
         height: 2.8rem;
         display: flex;
         align-items: center;
@@ -152,6 +153,7 @@ header {
         color: var(--fc-secondary);
         padding-inline: 1rem;
         font-weight: 500;
+        text-decoration: none;
 
         &.active {
           position: relative;
