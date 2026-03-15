@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer Money</title>
+    <link rel="stylesheet" href="../../styles/dashboard/enter-pin.css">
+</head>
+<header>
+    <nav class="icon">
+        <img src="../../assets/icons/ewallet/e-wallet.png" alt="E-Wallet">
+        <span>E-Wallet</span>
+    </nav>
+    <nav class="profile">
+        <nav class="profile">
+            <p>Ghaluh Wizard</p>
+        </nav>
+        <div class="photo">
+            <img src="../../assets/icons/dashboard/dashboard-v1/profile.png" alt="Profile">
+        </div>
+        <section class="drop-button">
+            <img src="../../assets/icons/dashboard/dashboard-v1/down.svg" alt="Dropdown">
+        </section>
+    </nav>
+</header>
+<hr>
+<section class="container">
+    <aside class="navside">
+        <nav>
+            <button>
+                <section class="icon"><img src="../../assets/icons/dashboard/transfer/dashboard.svg" alt="">
+                </section>
+                <section class="text">Dashboard</section>
+            </button>
+            <button class="active">
+                <section class="icon"><img src="../../assets/icons/dashboard/transfer/send.svg" alt="">
+                </section>
+                <section class="text">Transfer</section>
+            </button>
+            <button>
+                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/history.svg" alt="">
+                </section>
+                <section class="text">History</section>
+            </button>
+            <button>
+                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/upload.svg" alt="">
+                </section>
+                <section class="text">Top up</section>
+            </button>
+            <button>
+                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/users.svg" alt="">
+                </section>
+                <section class="text">Profile</section>
+            </button>
+            <button>
+                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/exit.svg" alt="">
+                </section>
+                <section class="text">Exit</section>
+            </button>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="page-title">
+            <img src="../../assets/icons/dashboard/transfer/send-blue.svg" alt="">
+            <h2>Transfer Money</h2>
+        </section>
+
+        <section class="stepper">
+            <div class="step completed">
+                <span class="circle">1</span> Find People
+            </div>
+            <div class="divider">----------------</div>
+            <div class="step active">
+                <span class="circle">2</span> Set Nominal
+            </div>
+            <div class="divider">----------------</div>
+            <div class="step">
+                <span class="circle">3</span> Finish
+            </div>
+        </section>
+
+        <section class="transfer-content">
+
+            <section class="form-group">
+                <h3>People Information</h3>
+                <div class="selected-person">
+                    <img src="../../assets/icons/dashboard/dashboard-v1/main/transaction/floyd.png" alt="Ghaluh 1"
+                        class="avatar">
+                    <div class="details">
+                        <span class="name">Ghaluh 1</span>
+                        <span class="phone">(239) 555-0108</span>
+                        <span class="badge-verified">
+                            <img src="../../assets/icons/dashboard/transfer/checklist.svg" alt="">
+                            Verified
+                        </span>
+                    </div>
+                    <button class="star">
+                        <img src="../../assets/icons/dashboard/transfer/star.svg" alt="Star">
+                    </button>
+                </div>
+            </section>
+
+            <section class="form-group">
+                <h3>Amount</h3>
+                <p>Type the amount you want to transfer and then press continue to the next steps.</p>
+                <div class="input-box">
+                    <img src="../../assets/icons/dashboard/transfer/money.svg" alt="">
+                    <input type="text" placeholder="Enter Nominal Transfer">
+                </div>
+            </section>
+
+            <section class="form-group">
+                <h3>Notes</h3>
+                <p>You can add some notes for this transfer such as payment coffee or something</p>
+                <textarea placeholder="Enter Some Notes"></textarea>
+            </section>
+
+            <button class="btn-submit">Submit & Transfer</button>
+
+        </section>
+        <section class="modal-overlay">
+            <section class="modal-box">
+                <section class="container">
+                    <section class="name">
+                        TRANSFER TO GHALUH 1
+                    </section>
+                    <hr>
+                    <section class="primary-text">
+                        <p>Enter Your Pin 👋</p>
+                    </section>
+                    <section class="secondary-text">
+                        <p>Enter your pin for transaction.</p>
+                    </section>
+                    <section class="input-group">
+                        <section class="pin">
+                            <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
+                            <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
+                            <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
+                            <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
+                            <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
+                            <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
+                        </section>
+                        <section class="submit-button">
+                            <button class="btn" type="submit">Next</button>
+                        </section>
+                        <section class="reset-pin">
+                            <p>Forgot Your Pin? <a href="reset-pin.html">Reset</a></p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        </body>
+
+</html>
+</main>
+</section>
