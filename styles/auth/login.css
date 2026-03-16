@@ -63,6 +63,11 @@ body {
   font-size: 30px;
   font-weight: 400;
 }
+.form .container .primary-text h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
 
 .form .container .secondary-text {
   margin-top: 14px;
