@@ -10,60 +10,67 @@
 
 <body>
     <main>
-        <form class="form">
+        <form class="form" action="../landing-page-v1.html" method="get">
             <section class="container">
-                <section class="icon">
-                    <img src="../../assets/icons/ewallet/e-wallet.png" width="32px">
+                <header class="icon">
+                    <img src="../../assets/icons/ewallet/e-wallet.png" width="32" alt="E-Wallet logo">
                     <span>E-Wallet</span>
+                </header>
 
+                <header class="primary-text">
+                    <h1>Hello Welcome Back 👋</h1>
+                </header>
+
+                <p class="secondary-text">Fill out the form correctly or you can login with several option.</p>
+
+                <section aria-label="Sign in providers">
+                    <section class="google-sign">
+                        <button type="button">
+                            <img src="../../assets/icons/socials/google.png" alt="">
+                            <span>Sign In With Google</span>
+                        </button>
+                    </section>
+                    <section class="facebook-sign">
+                        <button type="button">
+                            <img src="../../assets/icons/socials/facebook.png" alt="">
+                            <span>Sign In With Facebook</span>
+                        </button>
+                    </section>
                 </section>
-                <section class="primary-text">
-                    <p>Hello Welcome Back 👋</p>
-                </section>
-                <section class="secondary-text">
-                    <p>Fill out the form correctly or you can login with several option.</p>
-                </section>
-                <section class="google-sign">
-                    <button><img src="../../assets/icons/socials/google.png" alt=""><span>Sign In With
-                            Google</span></button>
-                </section>
-                <section class="facebook-sign">
-                    <button><img src="../../assets/icons/socials/facebook.png" alt=""><span>Sign In With
-                            Facebook</span></button>
-                </section>
-                <section class="break-line">
+
+                <section class="break-line" aria-hidden="true">
                     <span class="first-line"></span>
                     <span class="hr-lines">Or</span>
                     <span class="second-line"></span>
                 </section>
-                <section class="input-group">
+
+                <section class="input-group" aria-label="Login form">
                     <section class="email">
-                        <label class="label label-email" for="email">
-                            <p>Email</p>
-                        </label>
+                        <label class="label label-email" for="email">Email</label>
                         <img class="input-icon" src="../../assets/icons/input/email.png" alt="">
-                        <input class="input input-email" type="email" placeholder="Enter Your Email">
+                        <input id="email" name="email" class="input input-email" type="email"
+                            placeholder="Enter Your Email" autocomplete="email" required>
                     </section>
                     <section class="password">
-                        <label class="label label-password" for="">
-                            <p>Password</p>
-                        </label>
+                        <label class="label label-password" for="password">Password</label>
                         <img class="input-icon" src="../../assets/icons/input/password.png" alt="">
-                        <input type="password" class="input input-password" placeholder="Enter Your Password">
+                        <input id="password" name="password" type="password" class="input input-password"
+                            placeholder="Enter Your Password" autocomplete="current-password" required>
                         <img class="eyelash" src="../../assets/icons/input/EyeSlash.png" alt="">
                     </section>
                     <section class="login-button">
-                        <a href="../landing-page-v1.html"><button class="btn" type="submit">Login</button></a>
+                        <button class="btn" type="submit">Login</button>
                     </section>
                     <section class="opsional-login">
-                        <p class="">Not Have An Account? <a href="register.html">Register</a></p>
+                        <p>Not Have An Account? <a href="register.html">Register</a></p>
                     </section>
                 </section>
             </section>
         </form>
-        <section class="icon-tab">
-            <img src="../../assets/icons/ewallet/login-ewallet.png" alt="hand-wallet">
-        </section>
+
+        <figure class="icon-tab">
+            <img src="../../assets/icons/ewallet/login-ewallet.png" alt="E-Wallet illustration">
+        </figure>
     </main>
 </body>
 

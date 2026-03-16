@@ -8,40 +8,47 @@
 </head>
 <body>
     <main>
-        <section class="form">
+        <form class="form" action="../dashboard/dashboard-v1.html" method="get">
             <section class="container">
-                <section class="icon">
-                <img src="../../assets/icons/ewallet/e-wallet.png" width="32px">
-                <span>E-Wallet</span>
+                <header class="icon">
+                    <img src="../../assets/icons/ewallet/e-wallet.png" width="32" alt="E-Wallet logo">
+                    <span>E-Wallet</span>
+                </header>
 
-                </section>
-                <section class="primary-text">
-                    <p>Enter Your Pin 👋</p>
-                </section>
-                <section class="secondary-text">
-                    <p>Please save your pin because this so important.</p>
-                </section>
-                <section class="input-group">
-                     <section class="pin">
-                        <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
-                        <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
-                        <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
-                        <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
-                        <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
-                        <input type="text" class="pin-input" maxlength="1" inputmode="numeric">
-                    </section>
+                <header class="primary-text">
+                    <h1>Enter Your Pin 👋</h1>
+                </header>
+
+                <p class="secondary-text">Please save your pin because this so important.</p>
+
+                <section class="input-group" aria-label="Enter pin form">
+                    <fieldset class="pin">
+                        <legend class="sr-only">PIN</legend>
+                        <input id="pin-1" name="pin_1" type="password" class="pin-input" maxlength="1"
+                            inputmode="numeric" autocomplete="one-time-code" aria-label="PIN digit 1" required>
+                        <input id="pin-2" name="pin_2" type="password" class="pin-input" maxlength="1"
+                            inputmode="numeric" autocomplete="one-time-code" aria-label="PIN digit 2" required>
+                        <input id="pin-3" name="pin_3" type="password" class="pin-input" maxlength="1"
+                            inputmode="numeric" autocomplete="one-time-code" aria-label="PIN digit 3" required>
+                        <input id="pin-4" name="pin_4" type="password" class="pin-input" maxlength="1"
+                            inputmode="numeric" autocomplete="one-time-code" aria-label="PIN digit 4" required>
+                        <input id="pin-5" name="pin_5" type="password" class="pin-input" maxlength="1"
+                            inputmode="numeric" autocomplete="one-time-code" aria-label="PIN digit 5" required>
+                        <input id="pin-6" name="pin_6" type="password" class="pin-input" maxlength="1"
+                            inputmode="numeric" autocomplete="one-time-code" aria-label="PIN digit 6" required>
+                    </fieldset>
                     <section class="submit-button">
                         <button class="btn" type="submit">Submit</button>
                     </section>
                     <section class="reset-pin">
-                        <p class="">Forgot Your Pin? <a href="reset-pin.html">Reset</a></p>
+                        <p>Forgot Your Pin? <a href="forgot-password.html">Reset</a></p>
                     </section>
                 </section>
             </section>
-        </section>
-        <section class="icon-tab">
-            <img src="../../assets/icons/ewallet/pin-human.png" alt="human-icon">
-        </section>
+        </form>
+        <figure class="icon-tab">
+            <img src="../../assets/icons/ewallet/pin-human.png" alt="Enter pin illustration">
+        </figure>
     </main>
 </body>
 </html>
