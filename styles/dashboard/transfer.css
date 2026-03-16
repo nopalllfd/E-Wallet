@@ -21,6 +21,11 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 hr {
   color: var(--fc-secondary);
   opacity: 20%;
@@ -49,11 +54,6 @@ header {
       color: var(--bg-primary);
       font-family: var(--f-secondary);
     }
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
   }
 
   .profile {
