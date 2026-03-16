@@ -285,9 +285,7 @@ header {
           align-items: center;
           padding: 1rem 1.5rem;
           text-decoration: none;
-          span {
-            text-decoration: none;
-          }
+
           &:nth-child(odd) {
             background-color: #f8f9fa;
           }
