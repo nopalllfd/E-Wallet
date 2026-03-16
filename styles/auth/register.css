@@ -61,6 +61,11 @@ main {
       .secondary-text {
         color: var(--fc-secondary);
       }
+      section[aria-label='Sign in providers'] {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
       .google-sign {
         button {
           width: 100%;
@@ -131,11 +136,13 @@ main {
           flex-direction: column;
           position: relative;
           .label {
+            margin: 0 0 8px 0;
+            font-weight: 600;
+            color: var(--fc-secondary);
+            font-size: 14px;
+            display: block;
             p {
-              margin: 0 0 8px 0;
-              font-weight: 600;
-              color: var(--fc-secondary);
-              font-size: 14px;
+              margin: 0;
             }
           }
 
@@ -153,7 +160,7 @@ main {
           .input-icon {
             position: absolute;
             left: 15px;
-            top: 38px;
+            top: 36px;
             width: 18px;
             filter: opacity(0.5);
             pointer-events: none;
@@ -162,7 +169,7 @@ main {
           .eyelash {
             position: absolute;
             right: 15px;
-            top: 38px;
+            top: 36px;
             width: 18px;
             filter: opacity(0.5);
             cursor: pointer;
