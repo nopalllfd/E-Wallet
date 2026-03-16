@@ -1,26 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --bg-primary: rgba(41, 72, 255, 1);
-  --bg-white: #fff;
-  --fc-secondary: #4f5665;
-  --border-grey: #c2c2c241;
-  --input-grey: #e6e6e625;
-  --input-radius: 8px;
-  --f-primary: 'Montserrat', sans-serif;
-  --f-secondary: 'Nunito Sans', sans-serif;
-  --radial-gradient-primary: radial-gradient(50% 50% at 50% 50%, rgba(56, 104, 253, 0.87) 70%, rgba(123, 155, 255, 0) 100%);
-}
-
-button {
-  cursor: pointer;
-}
+ 
 
 header {
   background-color: var(--bg-primary);
@@ -71,11 +49,6 @@ header {
       }
     }
   }
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 main {
