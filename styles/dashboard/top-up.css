@@ -340,7 +340,7 @@ header {
                 font-weight: 700;
 
                 .detail-value {
-                  color: var(--bg-primary);
+                  /* color: var(--bg-primary); */
                   font-weight: 700;
                 }
               }
@@ -358,6 +358,10 @@ header {
             font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
+            a {
+              text-decoration: none;
+              color: var(--bg-white);
+            }
           }
 
           .discount-note {

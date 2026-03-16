@@ -96,7 +96,7 @@ header {
                 padding-inline: 1rem;
                 text-decoration: none;
               &:first-child{
-                  color: var(--bg-white);
+                color: var(--bg-white);
                 background-color: var(--bg-primary);
               }
               &:last-child {
