@@ -12,206 +12,224 @@ body {
   width: 50%;
   border-radius: 0 16px 16px 0;
   display: inline-block;
+
+  .container {
+    padding: 8% 11%;
+
+    .icon {
+      color: var(--bg-primary);
+      text-align: start;
+      vertical-align: middle;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%);
+        margin-left: 15px;
+        font-family: var(--f-primary);
+      }
+    }
+
+    .primary-text {
+      margin-top: 15px;
+      font-family: var(--f-primary);
+      font-size: 30px;
+      font-weight: 400;
+
+      h1 {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+      }
+    }
+
+    .secondary-text {
+      margin-top: 14px;
+      line-height: 140%;
+      font-family: var(--f-primary);
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--fc-secondary);
+    }
+
+    .google-sign {
+      margin-top: 20px;
+      position: relative;
+
+      button {
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        padding: 20px 0;
+        background-color: #fff;
+        border: 1.5px solid var(--border-grey);
+        font-family: var(--f-primary);
+        font-weight: 400;
+        font-size: 1rem;
+        color: var(--fc-secondary);
+      }
+
+      img {
+        position: absolute;
+        width: 24px;
+        top: 50%;
+        left: 31%;
+        transform: translateY(-50%);
+      }
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 41%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .facebook-sign {
+      margin-top: 20px;
+      position: relative;
+
+      button {
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        padding: 20px 0;
+        background-color: #fff;
+        border: 1.5px solid var(--border-grey);
+        font-family: var(--f-primary);
+        font-weight: 400;
+        font-size: 1rem;
+        color: var(--fc-secondary);
+      }
+
+      img {
+        position: absolute;
+        width: 22px;
+        top: 50%;
+        left: 29%;
+        transform: translateY(-50%);
+      }
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 39%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .break-line {
+      position: relative;
+      padding: 5%;
+
+      .hr-lines {
+        position: absolute;
+        left: 48%;
+        font-size: 12px;
+        font-family: var(--f-primary);
+        color: var(--fc-secondary);
+      }
+
+      .first-line {
+        position: absolute;
+        left: 1%;
+        top: 65%;
+        width: 40%;
+        border-radius: 0.1rem;
+        height: 0.1rem;
+        background-color: var(--border-grey);
+      }
+
+      .second-line {
+        position: absolute;
+        right: 1%;
+        top: 65%;
+        width: 40%;
+        border-radius: 0.1rem;
+        height: 0.1rem;
+        background-color: var(--border-grey);
+      }
+    }
+  }
 }
+
 .icon-tab {
   position: absolute;
   bottom: 0%;
   left: 50%;
   background: var(--radial-gradient-primary);
-}
-.icon-tab img {
-  width: 100%;
+
+  img {
+    width: 100%;
+  }
 }
 
-.form .container {
-  padding: 8% 11%;
-}
+.input-group {
+  section {
+    position: relative;
+    width: 100%;
+  }
 
-.form .container .icon {
-  color: var(--bg-primary);
-  text-align: start;
-  vertical-align: middle;
-  position: relative;
-}
-.form .container .icon span {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-40%);
-  margin-left: 15px;
-  font-family: var(--f-primary);
-}
+  label {
+    font-family: var(--f-primary);
+    font-size: 1rem;
+  }
 
-.form .container .primary-text {
-  margin-top: 15px;
-  font-family: var(--f-primary);
-  font-size: 30px;
-  font-weight: 400;
-}
-.form .container .primary-text h1 {
-  font-size: inherit;
-  font-weight: inherit;
-  margin: 0;
-}
+  .input {
+    width: 100%;
+    display: block;
+    height: 2.5rem;
+    margin: 10px 0 15px 0;
+    padding: 12px 45px;
+    border-radius: var(--input-radius);
+    border: none;
+    background-color: var(--input-grey);
+    border: 0.11rem solid var(--border-grey);
+  }
 
-.form .container .secondary-text {
-  margin-top: 14px;
-  line-height: 140%;
-  font-family: var(--f-primary);
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--fc-secondary);
-}
-.form .container .google-sign {
-  margin-top: 20px;
-  position: relative;
-}
+  .input-icon,
+  .eyelash {
+    position: absolute;
+    width: 16px;
+    top: calc(60% + 8px);
+    transform: translateY(-50%);
+  }
 
-.form .container .google-sign button {
-  width: 100%;
-  border: none;
-  border-radius: 20px;
-  padding: 20px 0;
-  background-color: #fff;
-  border: 1.5px solid var(--border-grey);
-  font-family: var(--f-primary);
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--fc-secondary);
-}
+  .input-icon {
+    left: 15px;
+  }
 
-.form .container .google-sign img {
-  position: absolute;
-  width: 24px;
-  top: 50%;
-  left: 31%;
-  transform: translateY(-50%);
-}
-.form .container .google-sign span {
-  position: absolute;
-  top: 50%;
-  left: 41%;
-  transform: translateY(-50%);
-}
-
-.form .container .facebook-sign {
-  margin-top: 20px;
-  position: relative;
-}
-
-.form .container .facebook-sign button {
-  width: 100%;
-  border: none;
-  border-radius: 20px;
-  padding: 20px 0;
-  background-color: #fff;
-  border: 1.5px solid var(--border-grey);
-  font-family: var(--f-primary);
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--fc-secondary);
-}
-
-.form .container .facebook-sign img {
-  position: absolute;
-  width: 22px;
-  top: 50%;
-  left: 29%;
-  transform: translateY(-50%);
-}
-.form .container .facebook-sign span {
-  position: absolute;
-  top: 50%;
-  left: 39%;
-  transform: translateY(-50%);
-}
-
-.form .container .break-line {
-  position: relative;
-  padding: 5%;
-}
-.form .container .break-line .hr-lines {
-  position: absolute;
-  left: 48%;
-  font-size: 12px;
-  font-family: var(--f-primary);
-  color: var(--fc-secondary);
-}
-.form .container .break-line .first-line {
-  position: absolute;
-  left: 1%;
-  top: 65%;
-  width: 40%;
-  border-radius: 0.1rem;
-  height: 0.1rem;
-  background-color: var(--border-grey);
-}
-.form .container .break-line .second-line {
-  position: absolute;
-  right: 1%;
-  top: 65%;
-  width: 40%;
-  border-radius: 0.1rem;
-  height: 0.1rem;
-  background-color: var(--border-grey);
-}
-
-.input-group section {
-  position: relative;
-  width: 100%;
-}
-.input-group label {
-  font-family: var(--f-primary);
-  font-size: 1rem;
-}
-
-.input-group .input {
-  width: 100%;
-  display: block;
-  height: 2.5rem;
-  margin: 10px 0 15px 0;
-  padding: 12px 45px;
-  border-radius: var(--input-radius);
-  border: none;
-  background-color: var(--input-grey);
-  border: 0.11rem solid var(--border-grey);
-}
-
-.input-group .input-icon,
-.input-group .eyelash {
-  position: absolute;
-  width: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.input-group .input-icon {
-  left: 15px;
-}
-.input-group .eyelash {
-  right: 15px;
+  .eyelash {
+    right: 15px;
+  }
 }
 
 .forgot-password {
   margin-top: -0.3rem;
   margin-bottom: 1rem;
   text-align: right;
-}
-.forgot-password a {
-  font-size: 14px;
-  color: #2563eb;
-  font-weight: 600;
+
+  a {
+    font-size: 14px;
+    color: #2563eb;
+    font-weight: 600;
+  }
 }
 
-.login-button .btn {
-  width: 100%;
-  background-color: var(--bg-primary);
-  color: var(--bg-white);
-  font-family: var(--f-primary);
-  display: inline-block;
-  height: 50px;
-  text-align: center;
-  border: none;
-  font-size: 16px;
-  border-radius: 10px;
+.login-button {
+  .btn {
+    width: 100%;
+    background-color: var(--bg-primary);
+    color: var(--bg-white);
+    font-family: var(--f-primary);
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+  }
 }
 
 .opsional-login {
