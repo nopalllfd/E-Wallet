@@ -51,6 +51,11 @@ header {
     }
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .profile {
     display: flex;
     align-items: center;
