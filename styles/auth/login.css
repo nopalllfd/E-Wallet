@@ -250,6 +250,16 @@ main {
   }
 }
 
+@media (max-width: 1024px) {
+  main {
+    .icon-tab {
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
 @media (max-width: 768px) {
   main {
     .form {
@@ -259,17 +269,6 @@ main {
 
     .icon-tab {
       display: none;
-    }
-  }
-}
-@media (min-width: 768px) {
-  main {
-    .form {
-      width: 50%;
-    }
-
-    .icon-tab {
-      bottom: 10%;
     }
   }
 }
