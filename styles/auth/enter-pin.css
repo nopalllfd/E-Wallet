@@ -1,12 +1,13 @@
 body {
   background-color: var(--bg-primary);
   position: relative;
-  height: 120vh;
+  min-height: 100vh;
 }
 
 .form {
   background-color: var(--bg-white);
-  height: 120vh;
+  min-height: 100vh;
+  height: 100%;
   width: 50%;
   border-radius: 0 16px 16px 0;
   display: flex;
@@ -128,6 +129,64 @@ body {
 
   img {
     width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    .container {
+      padding-top: 18%;
+    }
+  }
+
+  .icon-tab {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--radial-gradient-primary);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 8rem;
+  }
+
+  .form {
+    min-height: auto;
+    height: auto;
+    width: min(92%, 420px);
+    border-radius: 16px;
+    display: block;
+
+    .container {
+      padding: 8% 11%;
+
+      .input-group {
+        .pin {
+          gap: 0.5rem;
+          margin: 2rem 0;
+        }
+
+        .pin-input {
+          font-size: 1.5rem;
+          padding-block: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .icon-tab {
+    display: none;
   }
 }
 

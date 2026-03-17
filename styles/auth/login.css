@@ -265,6 +265,45 @@ main {
     .form {
       width: 100%;
       border-radius: 0;
+
+      .container {
+        section[aria-label="Sign in providers"] {
+          display: flex;
+          flex-direction: row;
+          gap: 12px;
+
+          .google-sign,
+          .facebook-sign {
+            flex: 1;
+            margin-top: 20px;
+
+            button {
+              padding: 0;
+              height: 64px;
+              display: grid;
+              place-items: center;
+
+              img {
+                position: static;
+                top: auto;
+                right: auto;
+                bottom: auto;
+                left: auto;
+                width: 2rem;
+                transform: none;
+              }
+
+              span {
+                display: none;
+                position: static;
+                top: auto;
+                left: auto;
+                transform: none;
+              }
+            }
+          }
+        }
+      }
     }
 
     .icon-tab {
