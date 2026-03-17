@@ -249,3 +249,27 @@ main {
     }
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    .form {
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .icon-tab {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  main {
+    .form {
+      width: 50%;
+    }
+
+    .icon-tab {
+      bottom: 10%;
+    }
+  }
+}
