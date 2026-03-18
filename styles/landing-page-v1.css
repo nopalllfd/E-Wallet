@@ -76,7 +76,7 @@ header {
 
 main {
   font-family: var(--f-primary);
-
+    overflow: hidden;
   .home {
     min-height: 90vh;
     background-color: var(--bg-white);
@@ -789,12 +789,12 @@ footer {
         }
 
         .top {
-          top: 45px;
+          top: 105px;
           left: 40px;
         }
         img:nth-child(2) {
           position: relative;
-          top: 40px; 
+          top: 100px; 
           left: 10px 
         }
 
