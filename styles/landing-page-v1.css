@@ -789,12 +789,12 @@ footer {
         }
 
         .top {
-          top: 105px;
+          top: 155px;
           left: 40px;
         }
         img:nth-child(2) {
           position: relative;
-          top: 100px; 
+          top: 150px; 
           left: 10px 
         }
 
@@ -895,7 +895,8 @@ footer {
 
       .title {
         .main-title {
-          font-size: 2rem;
+          font-size: 1.5rem;
+          
         }
 
         .secondary-title {
