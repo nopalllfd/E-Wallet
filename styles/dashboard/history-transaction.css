@@ -367,12 +367,12 @@ header {
             display: block;
             font-size: .8rem;
             padding: .6rem 0;
-            border-bottom: none;
+            border-bottom: none !important;
             min-width: 0;
           }
 
           tbody tr {
-            border-bottom: 1px solid rgba(232, 232, 232, 0.6);
+            border-bottom: none;
           }
 
           .avatar {
