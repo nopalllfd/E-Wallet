@@ -371,6 +371,24 @@ header {
                         }
                     }
                 }
+                .chart {
+                    .header {
+                        align-items: center;
+                        & > strong {
+                            font-size: .8rem;
+                            margin-bottom: 1rem;
+                        }
+                        
+                        .dropdown {
+                            margin-bottom: 1rem;
+                            gap: .6rem;
+                            button {
+                                font-size: .7rem;
+                                padding: .15rem .6rem;
+                            }
+                        }
+                    }
+                }
             }
 
             .transaction {
