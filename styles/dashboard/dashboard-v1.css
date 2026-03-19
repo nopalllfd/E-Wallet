@@ -117,6 +117,7 @@ header {
         padding: 2rem 1rem 2rem 1rem;
         display: flex;
         width: 100%;
+        gap: 2rem;
         font-family: var(--f-primary);
         .data {
             font-family: var(--f-primary);
@@ -330,11 +331,11 @@ header {
                         display: none;
                     }
                     .icon {
-                        font-size:.9rem;
+                        font-size:.7rem;
                         font-weight: 600;
                     }
                     strong {
-                        font-size: .8rem;
+                        font-size: .6rem;
                         font-weight: 700;
                     }
                     & > section {
