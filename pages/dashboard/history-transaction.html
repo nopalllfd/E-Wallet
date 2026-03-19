@@ -78,84 +78,118 @@
                             <input type="text" placeholder="Enter Number or Full Name">
                         </section>
                     </section>
-                    <section class="datas">
-                        <section class="data">
-                            <img class="profile"
-                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/ghaluh.png"
-                                alt="">
-                            <p>Ghaluh 1</p>
-                            <p>082116304337</p>
-                            <p class="value">Rp.50.000</p>
-                            <button> <img class="trash-icon"
-                                    src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="">
-                            </button>
-                        </section>
-                        <section class="data">
-                            <img class="profile"
-                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/cameroon.png"
-                                alt="">
-                            <p>Cameron Williamson</p>
-                            <p>(308) 555-0121</p>
-                            <p class="value">Rp.50.000</p>
-                            <button> <img class="trash-icon"
-                                    src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="">
-                            </button>
-                        </section>
-                        <section class="data">
-                            <img class="profile"
-                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/cody.png"
-                                alt="">
-                            <p>Cody Fisher</p>
-                            <p>(704) 555-0127</p>
-                            <p class="value">Rp.50.000</p>
-                            <button> <img class="trash-icon"
-                                    src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="">
-                            </button>
-                        </section>
-                        <section class="data">
-                            <img class="profile"
-                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/kristin.png"
-                                alt="">
-                            <p>Kristin Watson</p>
-                            <p>(603) 555-0123</p>
-                            <p class="value">Rp.50.000</p>
-                            <button> <img class="trash-icon"
-                                    src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="">
-                            </button>
-                        </section>
-                        <section class="data">
-                            <img class="profile"
-                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/floyd.png"
-                                alt="">
-                            <p>Floyd Miles</p>
-                            <p>(671) 555-0110</p>
-                            <p class="value">Rp.50.000</p>
-                            <button> <img class="trash-icon"
-                                    src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="">
-                            </button>
-                        </section>
-                        <section class="data">
-                            <img class="profile"
-                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/wade.png"
-                                alt="">
-                            <p>Wade Warren</p>
-                            <p>(225) 555-0118</p>
-                            <p class="value">Rp.50.000</p>
-                            <button> <img class="trash-icon"
-                                    src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="">
-                            </button>
-                        </section>
-                        <section class="data">
-                            <img class="profile"
-                                src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/savannah.png"
-                                alt="">
-                            <p class="name">Savannah Nguyen</p>
-                            <p class="phone">(217) 555-0113</p>
-                            <p class="value">Rp.50.000</p>
-                            <button> <img class="trash-icon"
-                                    src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="">
-                            </button>
-                        </section>
+                    <section class="table-wrap" aria-label="Transaction list">
+                        <table class="transaction-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="avatar"><img class="profile"
+                                            src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/ghaluh.png"
+                                            alt="Transaction user avatar"></td>
+                                    <td>Ghaluh 1</td>
+                                    <td>082116304337</td>
+                                    <td class="value">Rp.50.000</td>
+                                    <td class="action">
+                                        <button type="button" aria-label="Delete transaction">
+                                            <img class="trash-icon"
+                                                src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="Trash icon">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="avatar"><img class="profile"
+                                            src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/cameroon.png"
+                                            alt="Transaction user avatar"></td>
+                                    <td>Cameron Williamson</td>
+                                    <td>(308) 555-0121</td>
+                                    <td class="value">Rp.50.000</td>
+                                    <td class="action">
+                                        <button type="button" aria-label="Delete transaction">
+                                            <img class="trash-icon"
+                                                src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="Trash icon">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="avatar"><img class="profile"
+                                            src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/cody.png"
+                                            alt="Transaction user avatar"></td>
+                                    <td>Cody Fisher</td>
+                                    <td>(704) 555-0127</td>
+                                    <td class="value">Rp.50.000</td>
+                                    <td class="action">
+                                        <button type="button" aria-label="Delete transaction">
+                                            <img class="trash-icon"
+                                                src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="Trash icon">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="avatar"><img class="profile"
+                                            src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/kristin.png"
+                                            alt="Transaction user avatar"></td>
+                                    <td>Kristin Watson</td>
+                                    <td>(603) 555-0123</td>
+                                    <td class="value">Rp.50.000</td>
+                                    <td class="action">
+                                        <button type="button" aria-label="Delete transaction">
+                                            <img class="trash-icon"
+                                                src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="Trash icon">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="avatar"><img class="profile"
+                                            src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/floyd.png"
+                                            alt="Transaction user avatar"></td>
+                                    <td>Floyd Miles</td>
+                                    <td>(671) 555-0110</td>
+                                    <td class="value">Rp.50.000</td>
+                                    <td class="action">
+                                        <button type="button" aria-label="Delete transaction">
+                                            <img class="trash-icon"
+                                                src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="Trash icon">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="avatar"><img class="profile"
+                                            src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/wade.png"
+                                            alt="Transaction user avatar"></td>
+                                    <td>Wade Warren</td>
+                                    <td>(225) 555-0118</td>
+                                    <td class="value">Rp.50.000</td>
+                                    <td class="action">
+                                        <button type="button" aria-label="Delete transaction">
+                                            <img class="trash-icon"
+                                                src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="Trash icon">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="avatar"><img class="profile"
+                                            src="../../assets/icons/dashboard/dashboard-v1/main/transaction/transaction-history/profile/savannah.png"
+                                            alt="Transaction user avatar"></td>
+                                    <td>Savannah Nguyen</td>
+                                    <td>(217) 555-0113</td>
+                                    <td class="value">Rp.50.000</td>
+                                    <td class="action">
+                                        <button type="button" aria-label="Delete transaction">
+                                            <img class="trash-icon"
+                                                src="../../assets/icons/dashboard/dashboard-v1/transaction/trash.svg" alt="Trash icon">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
                     <section class="footer">
                         <p>Show 5 history of 100 history</p>
