@@ -121,6 +121,8 @@ header {
         font-family: var(--f-primary);
         .data {
             font-family: var(--f-primary);
+            flex: 2 1 0;
+            min-width: 0;
             display: flex;
             flex-direction: column;
             padding-right: 1rem;
@@ -222,6 +224,8 @@ header {
             padding: .8rem .4rem .5rem .5rem;
             gap: 1rem;
             align-self: stretch;
+            flex: 1 1 0;
+            min-width: 0;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -321,7 +325,9 @@ header {
         main {
             flex-direction: column;
             background-color: #fff;
-            .data {            
+            .data {
+                width: 100%;
+                padding-right: 0;
                 .cash-flow {
                     background-color: var(--bg-white);
                     border-radius: 2rem;
@@ -365,6 +371,10 @@ header {
                         }
                     }
                 }
+            }
+
+            .transaction {
+                width: 100%;
             }
         }
     }
