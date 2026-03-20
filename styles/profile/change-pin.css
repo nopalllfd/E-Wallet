@@ -199,3 +199,58 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    background-color: var(--bg-primary);
+    padding: 1rem 1.25rem;
+    justify-content: flex-start;
+    .icon,
+    .profile {
+      display: none;
+    }
+    &::after {
+      content: "Change PIN";
+      color: var(--bg-white);
+      font-family: var(--f-secondary);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    aside {
+      display: none;
+    }
+    main {
+      padding: 1.25rem 1.25rem;
+      gap: 1.25rem;
+      .page-title {
+        display: none;
+      }
+    }
+  }
+
+  .container main .pin-wrap {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .container main .pin-wrap .container {
+    padding: 1.25rem 1rem 1.5rem 1rem;
+  }
+
+  .container main .pin-wrap .container .input-group .pin {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .container main .pin-wrap .container .input-group .pin-input {
+    width: auto;
+    flex: 1;
+    max-width: 2.6rem;
+    font-size: 1.6rem;
+    padding-block: 0.75rem;
+  }
+}

@@ -260,3 +260,79 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    background-color: var(--bg-primary);
+    padding: 1rem 1.25rem;
+    justify-content: flex-start;
+    .icon,
+    .profile {
+      display: none;
+    }
+    &::after {
+      content: "Profile";
+      color: var(--bg-white);
+      font-family: var(--f-secondary);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    aside {
+      display: none;
+    }
+    main {
+      padding: 1.25rem 1.25rem;
+      .container {
+        padding: 0;
+        gap: 1.25rem;
+      }
+    }
+  }
+
+  main {
+    .container {
+      .section {
+        .icon {
+          display: none;
+        }
+      }
+
+      .table {
+        flex-direction: column;
+      }
+
+      .table .form-table {
+        width: 100%;
+        flex: none;
+        padding: 1.25rem 1rem;
+        gap: 1.25rem;
+      }
+    }
+  }
+
+  .container main .container .table .form-table .profile-picture .picture-wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .container main .container .table .form-table .profile-picture .picture-wrap .avatar {
+    width: 6rem;
+    height: 6rem;
+    align-self: center;
+  }
+
+  .container main .container .table .form-table .profile-picture .picture-wrap .picture-actions {
+    width: 100%;
+  }
+
+  .container main .container .table .form-table .profile-picture .picture-wrap .picture-actions .btn-change,
+  .container main .container .table .form-table .profile-picture .picture-wrap .picture-actions .btn-delete {
+    width: 100%;
+    justify-content: center;
+    padding: 0.6rem 1rem;
+  }
+}
