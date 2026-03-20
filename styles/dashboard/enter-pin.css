@@ -487,3 +487,113 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    background-color: var(--bg-primary);
+    padding: 1rem 1.25rem;
+    justify-content: flex-start;
+    .icon,
+    .profile {
+      display: none;
+    }
+    &::after {
+      content: "Transfer";
+      color: var(--bg-white);
+      font-family: var(--f-secondary);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+  .container {
+    flex-direction: column;
+    aside {
+      display: none;
+    }
+    main {
+      padding: 1.25rem 1.25rem;
+      gap: 1.25rem;
+      .page-title {
+        display: none;
+      }
+      .stepper {
+        display: none;
+      }
+      .transfer-content {
+        border: none;
+        padding: 0;
+        gap: 1.25rem;
+        .form-group {
+          gap: 0.5rem;
+        }
+        .form-group h3 {
+          font-size: 1rem;
+        }
+        .selected-person {
+          padding: 0.9rem 1rem;
+          gap: 0.9rem;
+        }
+        .selected-person .avatar {
+          width: 44px;
+          height: 44px;
+        }
+        .selected-person .details {
+          gap: 0.2rem;
+          min-width: 0;
+        }
+        .selected-person .details .name,
+        .selected-person .details .phone {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .input-box {
+          padding: 0.75rem 1rem;
+        }
+        textarea {
+          min-height: 96px;
+        }
+        .btn-submit {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    height: 100dvh;
+    padding: 1rem;
+  }
+  .modal-box {
+    width: 100%;
+    max-width: 26rem;
+    height: auto;
+    bottom: 0;
+    padding: 0;
+    max-height: 90dvh;
+    overflow: auto;
+  }
+  .modal-box .container {
+    padding: 1.25rem 1rem 1.25rem 1rem;
+  }
+  .modal-box .container .primary-text {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+  }
+  .modal-box .container .secondary-text {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .modal-box .container .input-group .pin {
+    margin: 1.25rem 0;
+    gap: 0.5rem;
+  }
+  .modal-box .container .input-group .pin-input {
+    width: auto;
+    flex: 1;
+    max-width: 2.6rem;
+    font-size: 1.6rem;
+    padding-block: 0.75rem;
+  }
+}
