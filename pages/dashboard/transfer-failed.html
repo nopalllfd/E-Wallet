@@ -8,145 +8,143 @@
     <link rel="stylesheet" href="../../styles/global.css">
     <link rel="stylesheet" href="../../styles/dashboard/transfer-failed.css">
 </head>
-<header>
-    <nav class="icon">
-        <img src="../../assets/icons/ewallet/e-wallet.png" alt="E-Wallet">
-        <span>E-Wallet</span>
-    </nav>
-    <nav class="profile">
+<body>
+    <header>
+        <nav class="icon">
+            <img src="../../assets/icons/ewallet/e-wallet.png" alt="E-Wallet">
+            <span>E-Wallet</span>
+        </nav>
         <nav class="profile">
-            <p>Ghaluh Wizard</p>
+            <nav class="profile">
+                <p>Ghaluh Wizard</p>
+            </nav>
+            <div class="photo">
+                <img src="../../assets/icons/dashboard/dashboard-v1/profile.png" alt="Profile">
+            </div>
+            <section class="drop-button">
+                <img src="../../assets/icons/dashboard/dashboard-v1/down.svg" alt="Dropdown">
+            </section>
         </nav>
-        <div class="photo">
-            <img src="../../assets/icons/dashboard/dashboard-v1/profile.png" alt="Profile">
-        </div>
-        <section class="drop-button">
-            <img src="../../assets/icons/dashboard/dashboard-v1/down.svg" alt="Dropdown">
-        </section>
-    </nav>
-</header>
-<hr>
-<section class="container">
-    <aside class="navside">
-        <nav>
-            <a href="dashboard-v1.html">
-                <section class="icon"><img src="../../assets/icons/dashboard/transfer/dashboard.svg" alt="">
-                </section>
-                <section class="text">Dashboard</section>
-            </a>
-            <a class="active" href="transfer.html">
-                <section class="icon"><img src="../../assets/icons/dashboard/transfer/send.svg" alt="">
-                </section>
-                <section class="text">Transfer</section>
-            </a>
-            <a href="history-transaction.html">
-                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/history.svg" alt="">
-                </section>
-                <section class="text">History</section>
-            </a>
-            <a href="top-up.html">
-                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/upload.svg" alt="">
-                </section>
-                <section class="text">Top up</section>
-            </a>
-            <a href="../profile/edit-profile.html">
-                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/users.svg" alt="">
-                </section>
-                <section class="text">Profile</section>
-            </a>
-            <a href="../auth/login.html">
-                <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/exit.svg" alt="">
-                </section>
-                <section class="text">Exit</section>
-            </a>
-        </nav>
-    </aside>
+    </header>
+    <hr>
+    <section class="container">
+        <aside class="navside">
+            <nav>
+                <a href="dashboard-v1.html">
+                    <section class="icon"><img src="../../assets/icons/dashboard/transfer/dashboard.svg" alt="">
+                    </section>
+                    <section class="text">Dashboard</section>
+                </a>
+                <a class="active" href="transfer.html">
+                    <section class="icon"><img src="../../assets/icons/dashboard/transfer/send.svg" alt="">
+                    </section>
+                    <section class="text">Transfer</section>
+                </a>
+                <a href="history-transaction.html">
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/history.svg" alt="">
+                    </section>
+                    <section class="text">History</section>
+                </a>
+                <a href="top-up.html">
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/upload.svg" alt="">
+                    </section>
+                    <section class="text">Top up</section>
+                </a>
+                <a href="../profile/edit-profile.html">
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/users.svg" alt="">
+                    </section>
+                    <section class="text">Profile</section>
+                </a>
+                <a href="../auth/login.html">
+                    <section class="icon"><img src="../../assets/icons/dashboard/dashboard-v1/exit.svg" alt="">
+                    </section>
+                    <section class="text">Exit</section>
+                </a>
+            </nav>
+        </aside>
 
-    <main>
-        <section class="page-title">
-            <img src="../../assets/icons/dashboard/transfer/send-blue.svg" alt="">
-            <h2>Transfer Money</h2>
-        </section>
+        <main>
+            <section class="page-title">
+                <img src="../../assets/icons/dashboard/transfer/send-blue.svg" alt="">
+                <h2>Transfer Money</h2>
+            </section>
 
-        <section class="stepper">
-            <div class="step completed">
-                <span class="circle">1</span> Find People
-            </div>
-            <div class="divider">----------------</div>
-            <div class="step active">
-                <span class="circle">2</span> Set Nominal
-            </div>
-            <div class="divider">----------------</div>
-            <div class="step">
-                <span class="circle">3</span> Finish
-            </div>
-        </section>
+            <section class="stepper">
+                <div class="step completed">
+                    <span class="circle">1</span> Find People
+                </div>
+                <div class="divider">----------------</div>
+                <div class="step active">
+                    <span class="circle">2</span> Set Nominal
+                </div>
+                <div class="divider">----------------</div>
+                <div class="step">
+                    <span class="circle">3</span> Finish
+                </div>
+            </section>
 
-        <section class="transfer-content">
-
-            <section class="form-group">
-                <h3>People Information</h3>
-                <div class="selected-person">
-                    <img src="../../assets/icons/dashboard/dashboard-v1/main/transaction/floyd.png" alt="Ghaluh 1"
-                        class="avatar">
-                    <div class="details">
-                        <span class="name">Ghaluh 1</span>
-                        <span class="phone">(239) 555-0108</span>
-                        <span class="badge-verified">
-                            <img src="../../assets/icons/dashboard/transfer/checklist.svg" alt="">
-                            Verified
-                        </span>
+            <section class="transfer-content">
+                <section class="form-group">
+                    <h3>People Information</h3>
+                    <div class="selected-person">
+                        <img src="../../assets/icons/dashboard/dashboard-v1/main/transaction/floyd.png" alt="Ghaluh 1" class="avatar">
+                        <div class="details">
+                            <span class="name">Ghaluh 1</span>
+                            <span class="phone">(239) 555-0108</span>
+                            <span class="badge-verified">
+                                <img src="../../assets/icons/dashboard/transfer/checklist.svg" alt="">
+                                Verified
+                            </span>
+                        </div>
+                        <button class="star">
+                            <img src="../../assets/icons/dashboard/transfer/star.svg" alt="Star">
+                        </button>
                     </div>
-                    <button class="star">
-                        <img src="../../assets/icons/dashboard/transfer/star.svg" alt="Star">
-                    </button>
-                </div>
+                </section>
+
+                <section class="form-group">
+                    <h3>Amount</h3>
+                    <p>Type the amount you want to transfer and then press continue to the next steps.</p>
+                    <div class="input-box">
+                        <img src="../../assets/icons/dashboard/transfer/money.svg" alt="">
+                        <input type="text" placeholder="Enter Nominal Transfer">
+                    </div>
+                </section>
+
+                <section class="form-group">
+                    <h3>Notes</h3>
+                    <p>You can add some notes for this transfer such as payment coffee or something</p>
+                    <textarea placeholder="Enter Some Notes"></textarea>
+                </section>
+
+                <button class="btn-submit">Submit & Transfer</button>
             </section>
 
-            <section class="form-group">
-                <h3>Amount</h3>
-                <p>Type the amount you want to transfer and then press continue to the next steps.</p>
-                <div class="input-box">
-                    <img src="../../assets/icons/dashboard/transfer/money.svg" alt="">
-                    <input type="text" placeholder="Enter Nominal Transfer">
-                </div>
-            </section>
-
-            <section class="form-group">
-                <h3>Notes</h3>
-                <p>You can add some notes for this transfer such as payment coffee or something</p>
-                <textarea placeholder="Enter Some Notes"></textarea>
-            </section>
-
-            <button class="btn-submit">Submit & Transfer</button>
-
-        </section>
-        <section class="modal-overlay">
-            <section class="modal-box">
-                <section class="container">
-                    <section class="name">
-                        TRANSFER TO GHALUH 1
-                    </section>
-                    <hr>
-                    <img src="../../assets/icons/dashboard/transfer/transfer-failed.png" alt="">
-                    <section class="primary-text">
-                        <p>Oops Transfer <span class="red">Failed</span></p>
-                    </section>
-                    <section class="secondary-text">
-                        <p>Sorry Theres is an issue for your transfer, try again later !</p>
-                    </section>
-                    <section class="submit-button">
-                        <button class="btn" type="submit">Try Again</button>
-                    </section>
-                    <section class="repeat-button">
-                        <button class="btn" type="submit">Back To Dashboard</button>
+            <section class="modal-overlay">
+                <section class="modal-box">
+                    <section class="container">
+                        <section class="name">
+                            TRANSFER TO GHALUH 1
+                        </section>
+                        <hr>
+                        <img src="../../assets/icons/dashboard/transfer/transfer-failed.png" alt="">
+                        <section class="primary-text">
+                            <p>Oops Transfer <span class="red">Failed</span></p>
+                        </section>
+                        <section class="secondary-text">
+                            <p>Sorry Theres is an issue for your transfer, try again later !</p>
+                        </section>
+                        <section class="submit-button">
+                            <button class="btn" type="submit">Try Again</button>
+                        </section>
+                        <section class="repeat-button">
+                            <button class="btn" type="submit">Back To Dashboard</button>
+                        </section>
                     </section>
                 </section>
             </section>
-        </section>
-</section>
+        </main>
+    </section>
 </body>
 
 </html>
-</main>
-</section>
