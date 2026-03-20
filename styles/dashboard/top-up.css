@@ -351,3 +351,88 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    background-color: var(--bg-primary);
+    padding: 1rem 1.25rem;
+    justify-content: flex-start;
+    .icon,
+    .profile {
+      display: none;
+    }
+    &::after {
+      content: "Top Up";
+      color: var(--bg-white);
+      font-family: var(--f-secondary);
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    aside {
+      display: none;
+    }
+    main {
+      padding: 1.25rem 1.25rem;
+      .container {
+        padding: 0;
+        gap: 1.25rem;
+      }
+    }
+  }
+
+  main {
+    .container {
+      .section {
+        .icon {
+          display: none;
+        }
+      }
+
+      .table {
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+    }
+  }
+
+  .container main .container .table .left-table,
+  .container main .container .table .right-table {
+    width: 100%;
+    flex: none;
+  }
+
+  .container main .container .table .left-table {
+    padding: 1.25rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .container main .container .table .right-table {
+    padding: 1.25rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .container main .container .table .left-table .account-card {
+    padding: 0.9rem 1rem;
+    gap: 0.9rem;
+  }
+
+  .container main .container .table .left-table .account-card .profile-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .container main .container .table .left-table .account-card .bio {
+    min-width: 0;
+  }
+
+  .container main .container .table .left-table .account-card .bio .name,
+  .container main .container .table .left-table .account-card .bio .phone {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
